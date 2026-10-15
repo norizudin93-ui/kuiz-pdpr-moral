@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PDPR Pendidikan Moral SPM — Gerak Gempur Bahagian C</title>
+<style>
+:root{--maroon:#701b32;--gold:#f2c94c;--ink:#20242b;--muted:#697386;--bg:#f5f6fa;--line:#dfe3eb}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header{background:linear-gradient(135deg,#541326,var(--maroon));color:white;padding:24px 16px;border-bottom:5px solid var(--gold)}
+.wrap{max-width:900px;margin:auto;padding:16px}h1{font-size:1.45rem;margin:0 0 8px}h2{font-size:1.15rem;margin:0 0 10px}h3{font-size:1rem;margin:0 0 8px}.sub{opacity:.9;font-size:.95rem}
+.card{background:white;border:1px solid var(--line);border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 3px 12px #20242b0a}
+label{display:block;font-weight:650;margin:10px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #bbc3d2;border-radius:10px;font:inherit;background:#fff}
+button{border:0;border-radius:10px;padding:11px 15px;font:inherit;font-weight:700;cursor:pointer;background:var(--maroon);color:#fff}
+button.secondary{background:#e9ebf1;color:#242936}button.gold{background:var(--gold);color:#2b2110}
+.small{font-size:.9rem;color:var(--muted)}.pill{display:inline-block;border-radius:99px;background:#f9edc2;padding:4px 10px;font-size:.82rem;font-weight:700}
+.options{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}.chip{background:#fff;border:1px solid #c5cbd7;color:#242936;padding:9px 11px;border-radius:12px;cursor:pointer;user-select:none;font:inherit;font-weight:500}.chip:active{cursor:grabbing}.chip.answer-correct{background:#e5f7e9!important;border:2px solid #16803c!important;color:#116329!important}.chip.answer-wrong{background:#fde8e8!important;border:2px solid #c62828!important;color:#a31616!important}.chip .result-icon{font-weight:900;margin-left:7px;font-size:1.05em}.check-legend{font-size:.9rem;margin:8px 0}.check-legend .ok{color:#16803c;font-weight:800}.check-legend .bad{color:#c62828;font-weight:800}
+.drop{border:2px dashed #b8bfce;border-radius:12px;min-height:54px;padding:10px;margin:8px 0;background:#fbfcff}.drop.over{border-color:var(--maroon);background:#fff7f9}.drop .chip{display:inline-block;margin:2px}
+.essay{background:#f8f9fc;border-left:4px solid var(--maroon);padding:13px;border-radius:8px;white-space:pre-wrap;min-height:60px}
+.question{padding:14px 0;border-bottom:1px solid var(--line)}.question:last-child{border:0}
+footer{color:var(--muted);font-size:.82rem;text-align:center;padding:22px}
+.notice{background:#fff6d9;border:1px solid #eed37a;padding:12px;border-radius:10px}
+.hide{display:none}.mark{font-weight:750;color:var(--maroon)}
+@media(min-width:650px){.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><div class="pill">PDPR • Pendidikan Moral SPM</div><h1>Gerak Gempur 2026 — Bahagian C</h1><div class="sub">Soalan 8: Pengurusan kewangan beretika · Soalan 9: Isu buli di sekolah</div></div></header>
+<main class="wrap">
+<section class="card">
+<h2>Maklumat murid</h2>
+<div class="two"><div><label for="nama">Nama penuh</label><input id="nama" required placeholder="Masukkan nama murid"></div><div><label for="kelas">Kelas</label><input id="kelas" required placeholder="Contoh: 5 Arif"></div></div>
+<div class="notice"><b>Arahan:</b> Baca subsoalan. Seret pilihan isi ke ruang yang disediakan (atau ketik pilihan pada telefon). Sistem akan menyusun isi itu menjadi ayat jawapan/esei. Semak ayat, kemudian salin atau muat turun jawapan untuk dihantar kepada guru. Lengkapkan semua bahagian.</div>
+<p class="small">Nota: ini latihan membina jawapan berpandukan isi skema. Murid masih perlu menyemak tatabahasa dan memastikan jawapan memenuhi kehendak soalan serta markah.</p>
+</section>
+<section class="card" id="q8">
+<h2>SOALAN 8 — Pengurusan kewangan</h2>
+<p><b>(a) Apakah kebaikan menyimpan dalam Skim Simpanan Pendidikan Nasional (SSPN)?</b> <span class="mark">[3 markah]</span></p>
+<div class="question"><label>Pilih dan seret isi yang sesuai ke ruang jawapan</label><div class="options" id="opts8a"><button type="button" class="chip" data-key="8a" data-index="0" aria-label="Pilih: Menjamin kos pendidikan tinggi">Menjamin kos pendidikan tinggi</button><button type="button" class="chip" data-key="8a" data-index="1" aria-label="Pilih: Mendidik budaya menabung">Mendidik budaya menabung</button><button type="button" class="chip" data-key="8a" data-index="2" aria-label="Pilih: Mengurangkan beban hutang">Mengurangkan beban hutang</button><button type="button" class="chip" data-key="8a" data-index="3" aria-label="Pilih: Memberikan pelepasan cukai pendapatan">Memberikan pelepasan cukai pendapatan</button><button type="button" class="chip" data-key="8a" data-index="4" aria-label="Pilih: Melayakkan pendeposit memohon pinjaman PTPTN">Melayakkan pendeposit memohon pinjaman PTPTN</button></div><div class="drop" id="drop8a" data-target="8a" aria-label="Ruang jawapan Soalan 8(a)"></div><div class="essay" id="essay8a">Ayat jawapan akan dijana di sini.</div><button class="secondary" onclick="clearDrop('8a')">Kosongkan</button></div>
+<p><b>(b) Membuat simpanan ialah salah satu sumber kewangan yang diperoleh secara beretika. Tuliskan sumber kewangan lain.</b> <span class="mark">[3 markah]</span></p>
+<div class="question"><label>Pilih dan seret sumber kewangan</label><div class="options" id="opts8b"><button type="button" class="chip" data-key="8b" data-index="0" aria-label="Pilih: Insurans">Insurans</button><button type="button" class="chip" data-key="8b" data-index="1" aria-label="Pilih: Pelaburan hartanah">Pelaburan hartanah</button><button type="button" class="chip" data-key="8b" data-index="2" aria-label="Pilih: Dividen">Dividen</button><button type="button" class="chip" data-key="8b" data-index="3" aria-label="Pilih: Saham yang diiktiraf">Saham yang diiktiraf</button><button type="button" class="chip" data-key="8b" data-index="4" aria-label="Pilih: Gaji">Gaji</button><button type="button" class="chip" data-key="8b" data-index="5" aria-label="Pilih: Bonus">Bonus</button><button type="button" class="chip" data-key="8b" data-index="6" aria-label="Pilih: Upah">Upah</button><button type="button" class="chip" data-key="8b" data-index="7" aria-label="Pilih: Sewa">Sewa</button></div><div class="drop" id="drop8b" data-target="8b"></div><div class="essay" id="essay8b">Ayat jawapan akan dijana di sini.</div><button class="secondary" onclick="clearDrop('8b')">Kosongkan</button></div>
+<p><b>(c) Bincangkan cara menguruskan kewangan secara beretika berdasarkan nilai universal yang dipelajari.</b> <span class="mark">[8 markah]</span></p>
+<div class="question"><label>Nilai universal</label><div class="options" id="opts8cV"><button type="button" class="chip" data-key="8cV" data-index="0" aria-label="Pilih: Nilai rasional">Nilai rasional</button><button type="button" class="chip" data-key="8cV" data-index="1" aria-label="Pilih: Nilai kesederhanaan">Nilai kesederhanaan</button><button type="button" class="chip" data-key="8cV" data-index="2" aria-label="Pilih: Nilai bertanggungjawab">Nilai bertanggungjawab</button></div><div class="drop" id="drop8cV" data-target="8cV"></div>
+<label>Isi / fakta daripada skema</label><div class="options" id="opts8cF"><button type="button" class="chip" data-key="8cF" data-index="0" aria-label="Pilih: Membuat simpanan atau tabungan">Membuat simpanan atau tabungan</button><button type="button" class="chip" data-key="8cF" data-index="1" aria-label="Pilih: Menyertai skim pelaburan yang diiktiraf">Menyertai skim pelaburan yang diiktiraf</button><button type="button" class="chip" data-key="8cF" data-index="2" aria-label="Pilih: Membuat pinjaman mengikut kemampuan">Membuat pinjaman mengikut kemampuan</button><button type="button" class="chip" data-key="8cF" data-index="3" aria-label="Pilih: Memiliki aset tetap">Memiliki aset tetap</button><button type="button" class="chip" data-key="8cF" data-index="4" aria-label="Pilih: Merancang kewangan hari tua">Merancang kewangan hari tua</button><button type="button" class="chip" data-key="8cF" data-index="5" aria-label="Pilih: Melindungi pendapatan atau simpanan dengan insurans">Melindungi pendapatan atau simpanan dengan insurans</button><button type="button" class="chip" data-key="8cF" data-index="6" aria-label="Pilih: Membayar pinjaman secara konsisten">Membayar pinjaman secara konsisten</button><button type="button" class="chip" data-key="8cF" data-index="7" aria-label="Pilih: Berbelanja secara berhemat">Berbelanja secara berhemat</button></div><div class="drop" id="drop8cF" data-target="8cF"></div>
+<label>Huraian / sebab / kesan</label><div class="options" id="opts8cH"><button type="button" class="chip" data-key="8cH" data-index="0" aria-label="Pilih: supaya wang tersedia ketika kecemasan atau untuk pendidikan">supaya wang tersedia ketika kecemasan atau untuk pendidikan</button><button type="button" class="chip" data-key="8cH" data-index="1" aria-label="Pilih: agar dapat memperoleh pulangan dan mengurangkan risiko kerugian">agar dapat memperoleh pulangan dan mengurangkan risiko kerugian</button><button type="button" class="chip" data-key="8cH" data-index="2" aria-label="Pilih: supaya beban hutang tidak berlebihan">supaya beban hutang tidak berlebihan</button><button type="button" class="chip" data-key="8cH" data-index="3" aria-label="Pilih: agar tidak berlaku pembaziran dan keperluan utama didahulukan">agar tidak berlaku pembaziran dan keperluan utama didahulukan</button><button type="button" class="chip" data-key="8cH" data-index="4" aria-label="Pilih: untuk menjamin keselamatan kewangan pada masa hadapan">untuk menjamin keselamatan kewangan pada masa hadapan</button></div><div class="drop" id="drop8cH" data-target="8cH"></div>
+<div class="essay" id="essay8c">Ayat esei akan dijana di sini.</div><button class="secondary" onclick="clearDrop('8cV');clearDrop('8cF');clearDrop('8cH')">Kosongkan jawapan (c)</button></div>
+<p><b>(d) Mengapakah isu muflis berlaku dalam kalangan belia?</b> <span class="mark">[6 markah]</span></p>
+<div class="question"><label>Pilih dan seret punca yang sesuai</label><div class="options" id="opts8d"><button type="button" class="chip" data-key="8d" data-index="0" aria-label="Pilih: Mengurus kewangan dengan lemah dan tidak merancang perbelanjaan">Mengurus kewangan dengan lemah dan tidak merancang perbelanjaan</button><button type="button" class="chip" data-key="8d" data-index="1" aria-label="Pilih: Berbelanja melebihi pendapatan">Berbelanja melebihi pendapatan</button><button type="button" class="chip" data-key="8d" data-index="2" aria-label="Pilih: Tidak berdisiplin ketika membeli-belah">Tidak berdisiplin ketika membeli-belah</button><button type="button" class="chip" data-key="8d" data-index="3" aria-label="Pilih: Mudah terpengaruh dengan promosi jualan dalam talian">Mudah terpengaruh dengan promosi jualan dalam talian</button><button type="button" class="chip" data-key="8d" data-index="4" aria-label="Pilih: Membuat pembelian secara impulsif">Membuat pembelian secara impulsif</button><button type="button" class="chip" data-key="8d" data-index="5" aria-label="Pilih: Menggunakan kad kredit tanpa kawalan">Menggunakan kad kredit tanpa kawalan</button><button type="button" class="chip" data-key="8d" data-index="6" aria-label="Pilih: Mengamalkan gaya hidup mewah di luar kemampuan">Mengamalkan gaya hidup mewah di luar kemampuan</button></div><div class="drop" id="drop8d" data-target="8d"></div><div class="essay" id="essay8d">Ayat jawapan akan dijana di sini.</div><button class="secondary" onclick="clearDrop('8d')">Kosongkan</button></div>
+</section>
+<section class="card" id="q9">
+<h2>SOALAN 9 — Kes buli di sekolah</h2>
+<p><b>(a) Senaraikan jenis kes buli yang sentiasa berlaku di sekolah.</b> <span class="mark">[4 markah]</span></p>
+<div class="question"><label>Pilih dan seret jenis buli</label><div class="options" id="opts9a"><button type="button" class="chip" data-key="9a" data-index="0" aria-label="Pilih: Buli fizikal seperti memukul atau menendang">Buli fizikal seperti memukul atau menendang</button><button type="button" class="chip" data-key="9a" data-index="1" aria-label="Pilih: Buli lisan seperti mengejek atau mengugut">Buli lisan seperti mengejek atau mengugut</button><button type="button" class="chip" data-key="9a" data-index="2" aria-label="Pilih: Buli sosial seperti memulaukan rakan">Buli sosial seperti memulaukan rakan</button><button type="button" class="chip" data-key="9a" data-index="3" aria-label="Pilih: Buli siber melalui mesej atau media sosial">Buli siber melalui mesej atau media sosial</button></div><div class="drop" id="drop9a" data-target="9a"></div><div class="essay" id="essay9a">Ayat jawapan akan dijana di sini.</div><button class="secondary" onclick="clearDrop('9a')">Kosongkan</button></div>
+<p><b>(b) Jelaskan punca berlakunya kes buli.</b> <span class="mark">[5 markah]</span></p>
+<div class="question"><label>Pilih dan seret punca buli</label><div class="options" id="opts9b"><button type="button" class="chip" data-key="9b" data-index="0" aria-label="Pilih: Kurang perhatian, pemantauan dan bimbingan daripada ibu bapa">Kurang perhatian, pemantauan dan bimbingan daripada ibu bapa</button><button type="button" class="chip" data-key="9b" data-index="1" aria-label="Pilih: Pengaruh rakan sebaya yang negatif">Pengaruh rakan sebaya yang negatif</button><button type="button" class="chip" data-key="9b" data-index="2" aria-label="Pilih: Pengaruh media yang memaparkan tingkah laku agresif">Pengaruh media yang memaparkan tingkah laku agresif</button><button type="button" class="chip" data-key="9b" data-index="3" aria-label="Pilih: Kurang pendidikan agama dan nilai moral">Kurang pendidikan agama dan nilai moral</button><button type="button" class="chip" data-key="9b" data-index="4" aria-label="Pilih: Penguatkuasaan peraturan sekolah yang lemah">Penguatkuasaan peraturan sekolah yang lemah</button></div><div class="drop" id="drop9b" data-target="9b"></div><div class="essay" id="essay9b">Ayat jawapan akan dijana di sini.</div><button class="secondary" onclick="clearDrop('9b')">Kosongkan</button></div>
+<p><b>(c) Buli mendatangkan pelbagai impak negatif kepada mangsa. Terangkan.</b> <span class="mark">[5 markah]</span></p>
+<div class="question"><label>Pilih dan seret kesan buli</label><div class="options" id="opts9c"><button type="button" class="chip" data-key="9c" data-index="0" aria-label="Pilih: Mangsa mengalami tekanan emosi seperti kemurungan dan kebimbangan">Mangsa mengalami tekanan emosi seperti kemurungan dan kebimbangan</button><button type="button" class="chip" data-key="9c" data-index="1" aria-label="Pilih: Keyakinan diri mangsa merosot dan mangsa mungkin mengasingkan diri">Keyakinan diri mangsa merosot dan mangsa mungkin mengasingkan diri</button><button type="button" class="chip" data-key="9c" data-index="2" aria-label="Pilih: Prestasi akademik terjejas kerana sukar menumpukan perhatian">Prestasi akademik terjejas kerana sukar menumpukan perhatian</button><button type="button" class="chip" data-key="9c" data-index="3" aria-label="Pilih: Mangsa takut ke sekolah lalu ponteng untuk mengelakkan pembuli">Mangsa takut ke sekolah lalu ponteng untuk mengelakkan pembuli</button><button type="button" class="chip" data-key="9c" data-index="4" aria-label="Pilih: Mangsa boleh mengalami kecederaan fizikal">Mangsa boleh mengalami kecederaan fizikal</button></div><div class="drop" id="drop9c" data-target="9c"></div><div class="essay" id="essay9c">Ayat jawapan akan dijana di sini.</div><button class="secondary" onclick="clearDrop('9c')">Kosongkan</button></div>
+<p><b>(d) Huraikan strategi yang perlu diambil oleh pihak sekolah untuk mengatasi kes buli daripada terus berleluasa. Jawapan anda hendaklah disokong dengan nilai universal yang telah anda pelajari.</b> <span class="mark">[6 markah]</span></p>
+<div class="question"><label>Pilih dan seret strategi</label><div class="options" id="opts9d"><button type="button" class="chip" data-key="9d" data-index="0" aria-label="Pilih: Guru dan pengawas membuat rondaan di kawasan berisiko">Guru dan pengawas membuat rondaan di kawasan berisiko</button><button type="button" class="chip" data-key="9d" data-index="1" aria-label="Pilih: Menyediakan peti aduan atau saluran digital yang sulit">Menyediakan peti aduan atau saluran digital yang sulit</button><button type="button" class="chip" data-key="9d" data-index="2" aria-label="Pilih: Melaksanakan kempen antibuli dan pendidikan empati">Melaksanakan kempen antibuli dan pendidikan empati</button><button type="button" class="chip" data-key="9d" data-index="3" aria-label="Pilih: Mengukuhkan peranan Unit Bimbingan dan Kaunseling">Mengukuhkan peranan Unit Bimbingan dan Kaunseling</button><button type="button" class="chip" data-key="9d" data-index="4" aria-label="Pilih: Melibatkan Pegawai Perhubungan Sekolah jika kes serius atau berunsur jenayah">Melibatkan Pegawai Perhubungan Sekolah jika kes serius atau berunsur jenayah</button><button type="button" class="chip" data-key="9d" data-index="5" aria-label="Pilih: Mengadakan sesi bersama ibu bapa dan intervensi tingkah laku">Mengadakan sesi bersama ibu bapa dan intervensi tingkah laku</button></div><div class="drop" id="drop9d" data-target="9d"></div><div class="essay" id="essay9d">Ayat jawapan akan dijana di sini.</div><button class="secondary" onclick="clearDrop('9d')">Kosongkan</button></div>
+</section>
+
+<section class="card" id="semakan">
+<h2>Semakan jawapan dan contoh jawapan lengkap</h2>
+<p class="small">Selepas memilih isi, tekan butang semakan bagi subsoalan. Pilihan mengandungi isi skema dan pengganggu. Sistem menyemak pilihan yang dipilih serta memaparkan contoh jawapan lengkap berdasarkan isi skema. Semakan memberi markah latihan berdasarkan isi skema yang dipilih, dengan had markah setiap subsoalan. Markah esei ialah anggaran latihan dan bukan pemarkahan rasmi pemeriksa.</p>
+<div class="two">
+<div><label>Soalan 8(a)</label><button type="button" onclick="checkAnswer('8a')">Semak 8(a)</button><div class="essay" id="feedback8a">Belum disemak.</div></div>
+<div><label>Soalan 8(b)</label><button type="button" onclick="checkAnswer('8b')">Semak 8(b)</button><div class="essay" id="feedback8b">Belum disemak.</div></div>
+<div><label>Soalan 8(c)</label><button type="button" onclick="checkAnswer('8c')">Semak 8(c)</button><div class="essay" id="feedback8c">Belum disemak.</div></div>
+<div><label>Soalan 8(d)</label><button type="button" onclick="checkAnswer('8d')">Semak 8(d)</button><div class="essay" id="feedback8d">Belum disemak.</div></div>
+<div><label>Soalan 9(a)</label><button type="button" onclick="checkAnswer('9a')">Semak 9(a)</button><div class="essay" id="feedback9a">Belum disemak.</div></div>
+<div><label>Soalan 9(b)</label><button type="button" onclick="checkAnswer('9b')">Semak 9(b)</button><div class="essay" id="feedback9b">Belum disemak.</div></div>
+<div><label>Soalan 9(c)</label><button type="button" onclick="checkAnswer('9c')">Semak 9(c)</button><div class="essay" id="feedback9c">Belum disemak.</div></div>
+<div><label>Soalan 9(d)</label><button type="button" onclick="checkAnswer('9d')">Semak 9(d)</button><div class="essay" id="feedback9d">Belum disemak.</div></div>
+</div>
+</section>
+
+<section class="card">
+<h2>Semakan dan penghantaran</h2>
+<p class="small">Jawapan yang dijana dipaparkan di atas. Tekan butang untuk menggabungkan semua jawapan ke dalam satu dokumen teks yang boleh dimuat turun dan dihantar kepada guru.</p>
+<button onclick="downloadAnswers()">Muat turun jawapan saya (.txt)</button>
+<button class="secondary" onclick="copyAll()">Salin semua jawapan</button>
+<p id="status" role="status" class="small"></p>
+<div class="notice"><b>Peringatan:</b> Menyiapkan tugasan PDPR ialah tanggungjawab murid. Jawapan yang tidak dihantar tidak boleh dianggap sebagai eviden lengkap kehadiran atau penyertaan.</div>
+</section>
+<footer>Latihan interaktif berasaskan topik dan isi skema Gerak Gempur Pendidikan Moral 2026. Bukan borang penghantaran berpusat; fail jawapan perlu dihantar kepada guru melalui saluran kelas.</footer>
+</main>
+<script>
+const data={
+'8a':{pool:[['Menjamin kos pendidikan tinggi','Kos pendidikan tinggi'],['Mendidik budaya menabung','Budaya menabung'],['Mengurangkan beban hutang','Mengurangkan hutang'],['Memberikan pelepasan cukai pendapatan','Pelepasan cukai'],['Melayakkan pendeposit memohon pinjaman PTPTN','Pinjaman PTPTN']],sentence:x=>'Antara kebaikan menyimpan dalam SSPN ialah '+(x.length===1?x[0]:x.slice(0,-1).join(', ')+' dan '+x[x.length-1])+'.'},
+'8b':{pool:[['Insurans','Insurans'],['Pelaburan hartanah','Pelaburan hartanah'],['Dividen','Dividen'],['Saham yang diiktiraf','Saham diiktiraf'],['Gaji','Gaji'],['Bonus','Bonus'],['Upah','Upah'],['Sewa','Sewa']],sentence:x=>'Selain simpanan, sumber kewangan lain yang diperoleh secara beretika ialah '+x.join(', ') + '.'},
+'8cV':{pool:[['Nilai rasional','Rasional'],['Nilai kesederhanaan','Kesederhanaan'],['Nilai bertanggungjawab','Bertanggungjawab']],sentence:x=>x.join(', ')},
+'8cF':{pool:[['Membuat simpanan atau tabungan','Membuat simpanan'],['Menyertai skim pelaburan yang diiktiraf','Pelaburan diiktiraf'],['Membuat pinjaman mengikut kemampuan','Pinjaman mengikut kemampuan'],['Memiliki aset tetap','Aset tetap'],['Merancang kewangan hari tua','Kewangan hari tua'],['Melindungi pendapatan atau simpanan dengan insurans','Insurans'],['Membayar pinjaman secara konsisten','Bayaran pinjaman'],['Berbelanja secara berhemat','Perbelanjaan berhemat']],sentence:x=>x.join('; ')},
+'8cH':{pool:[['supaya wang tersedia ketika kecemasan atau untuk pendidikan','Dana kecemasan/pendidikan'],['agar dapat memperoleh pulangan dan mengurangkan risiko kerugian','Pulangan dan risiko'],['supaya beban hutang tidak berlebihan','Beban hutang'],['agar tidak berlaku pembaziran dan keperluan utama didahulukan','Elak pembaziran'],['untuk menjamin keselamatan kewangan pada masa hadapan','Keselamatan masa depan']],sentence:x=>x.join('; ')},
+'8d':{pool:[['Mengurus kewangan dengan lemah dan tidak merancang perbelanjaan','Pengurusan kewangan lemah'],['Berbelanja melebihi pendapatan','Belanja melebihi pendapatan'],['Tidak berdisiplin ketika membeli-belah','Kurang disiplin membeli-belah'],['Mudah terpengaruh dengan promosi jualan dalam talian','Promosi dalam talian'],['Membuat pembelian secara impulsif','Pembelian impulsif'],['Menggunakan kad kredit tanpa kawalan','Kad kredit tanpa kawalan'],['Mengamalkan gaya hidup mewah di luar kemampuan','Gaya hidup mewah']],sentence:x=>'Antara punca belia boleh muflis ialah '+(x.length===1?x[0]:x.slice(0,-1).join(', ')+' dan '+x[x.length-1])+'.'},
+'9a':{pool:[['Buli fizikal seperti memukul atau menendang','Buli fizikal'],['Buli lisan seperti mengejek atau mengugut','Buli lisan'],['Buli sosial seperti memulaukan rakan','Buli sosial'],['Buli siber melalui mesej atau media sosial','Buli siber']],sentence:x=>'Jenis kes buli yang berlaku di sekolah termasuklah '+x.join(', ') + '.'},
+'9b':{pool:[['Kurang perhatian, pemantauan dan bimbingan daripada ibu bapa','Kurang perhatian ibu bapa'],['Pengaruh rakan sebaya yang negatif','Pengaruh rakan sebaya'],['Pengaruh media yang memaparkan tingkah laku agresif','Media agresif'],['Kurang pendidikan agama dan nilai moral','Kurang pendidikan nilai'],['Penguatkuasaan peraturan sekolah yang lemah','Penguatkuasaan lemah']],sentence:x=>'Antara punca berlakunya kes buli ialah '+(x.length===1?x[0]:x.slice(0,-1).join(', ')+' dan '+x[x.length-1])+'.'},
+'9c':{pool:[['Mangsa mengalami tekanan emosi seperti kemurungan dan kebimbangan','Tekanan emosi'],['Keyakinan diri mangsa merosot dan mangsa mungkin mengasingkan diri','Keyakinan diri merosot'],['Prestasi akademik terjejas kerana sukar menumpukan perhatian','Prestasi akademik'],['Mangsa takut ke sekolah lalu ponteng untuk mengelakkan pembuli','Ponteng sekolah'],['Mangsa boleh mengalami kecederaan fizikal','Kecederaan fizikal']],sentence:x=>'Antara impak negatif buli kepada mangsa ialah '+(x.length===1?x[0]:x.slice(0,-1).join(', ')+' dan '+x[x.length-1])+'.'},
+'9d':{pool:[['Guru dan pengawas membuat rondaan di kawasan berisiko','Rondaan kawasan berisiko'],['Menyediakan peti aduan atau saluran digital yang sulit','Saluran aduan sulit'],['Melaksanakan kempen antibuli dan pendidikan empati','Kempen antibuli'],['Mengukuhkan peranan Unit Bimbingan dan Kaunseling','Bimbingan dan kaunseling'],['Melibatkan Pegawai Perhubungan Sekolah jika kes serius atau berunsur jenayah','Pegawai Perhubungan Sekolah'],['Mengadakan sesi bersama ibu bapa dan intervensi tingkah laku','Kerjasama ibu bapa']],sentence:x=>'Strategi yang boleh diambil oleh pihak sekolah untuk mengatasi kes buli termasuklah '+(x.length===1?x[0]:x.slice(0,-1).join(', ')+' dan '+x[x.length-1])+'.'}
+};
+const selected={};
+const distractors={
+'8a':['Menjamin keuntungan pelaburan yang tetap setiap bulan','Menghapuskan semua komitmen kewangan keluarga'],
+'8b':['Wang hasil penipuan dalam talian','Pinjaman tidak berlesen'],
+'8cV':['Nilai keberanian','Nilai kasih sayang'],
+'8cF':['Membeli barangan mewah tanpa perancangan','Meminjam wang tanpa menilai kemampuan membayar'],
+'8cH':['supaya dapat membeli semua kehendak tanpa had','agar tidak perlu merancang perbelanjaan'],
+'8d':['Menyediakan bajet dan mematuhi kemampuan','Membayar hutang mengikut jadual'],
+'9a':['Buli akademik dengan memberikan kerja sekolah','Perselisihan pendapat yang diselesaikan secara baik'],
+'9b':['Hubungan rakan sebaya yang saling menghormati','Pemantauan dan bimbingan keluarga yang konsisten'],
+'9c':['Mangsa semakin yakin dan selesa hadir ke sekolah','Hubungan sosial mangsa bertambah baik akibat buli'],
+'9d':['Menyuruh mangsa menyelesaikan kes sendiri tanpa bantuan','Menyembunyikan laporan buli untuk menjaga nama sekolah']
+};
+const correctCounts={};
+for(const [key,obj] of Object.entries(data)){
+ correctCounts[key]=obj.pool.length;
+ (distractors[key]||[]).forEach(label=>{
+   const index=obj.pool.length; obj.pool.push([label,label]);
+   const el=document.getElementById('opts'+key);
+   if(el){const chip=document.createElement('button');chip.type='button';chip.className='chip distractor';chip.textContent=label;chip.dataset.key=key;chip.dataset.index=index;chip.draggable=true;chip.setAttribute('aria-label','Pilihan pengganggu: '+label);el.appendChild(chip);}
+ });
+}
+function init(){
+ for(const [key,obj] of Object.entries(data)){
+  selected[key]=[];
+  const el=document.getElementById('opts'+key);
+  const existing=el.querySelectorAll('.chip');
+  if(existing.length){existing.forEach(chip=>{const i=Number(chip.dataset.index);chip.draggable=true;chip.addEventListener('dragstart',e=>{e.dataTransfer.setData('text/plain',JSON.stringify({key,index:i}));});chip.addEventListener('click',()=>place(key,i));});}
+  else {obj.pool.forEach((item,i)=>{const chip=document.createElement('button');chip.type='button';chip.className='chip';chip.draggable=true;chip.textContent=item[0];chip.dataset.key=key;chip.dataset.index=i;chip.addEventListener('dragstart',e=>{e.dataTransfer.setData('text/plain',JSON.stringify({key,index:i}));});chip.addEventListener('click',()=>place(key,i));el.appendChild(chip);});}
+  const drop=document.getElementById('drop'+key);if(drop){drop.addEventListener('dragover',e=>{e.preventDefault();drop.classList.add('over')});drop.addEventListener('dragleave',()=>drop.classList.remove('over'));drop.addEventListener('drop',e=>{e.preventDefault();drop.classList.remove('over');try{const v=JSON.parse(e.dataTransfer.getData('text/plain'));if(v.key===key)place(key,v.index)}catch(_){}});}
+ }
+}
+function place(key,index){if(!selected[key].includes(index))selected[key].push(index);render(key)}
+function clearDrop(key){selected[key]=[];render(key)}
+function render(key){
+ const drop=document.getElementById('drop'+key),essay=document.getElementById('essay'+key),obj=data[key];
+ drop.innerHTML='';
+ selected[key].forEach((idx,pos)=>{const chip=document.createElement('span');chip.className='chip';chip.draggable=true;chip.dataset.key=key;chip.dataset.index=idx;chip.textContent=(pos+1)+'. '+obj.pool[idx][0]+'  ×';chip.title='Tekan untuk keluarkan';chip.onclick=()=>{selected[key]=selected[key].filter(i=>i!==idx);render(key)};drop.appendChild(chip)});
+ const chosen=selected[key].map(i=>obj.pool[i][0]);
+ if(!chosen.length){essay.textContent='Ayat jawapan akan dijana di sini.';return}
+ if(key==='8cV'||key==='8cF'||key==='8cH'){
+  const v=selected['8cV'].map(i=>data['8cV'].pool[i][0].replace('Nilai ',''));
+  const f=selected['8cF'].map(i=>data['8cF'].pool[i][0]);
+  const h=selected['8cH'].map(i=>data['8cH'].pool[i][0]);
+  const out=[];
+  if(v.length&&f.length&&h.length){const n=Math.min(f.length,h.length);for(let i=0;i<n;i++){const fact=f[i].replace(/[.!?]$/,'');const why=h[i].replace(/^[Ss]upaya |^[Aa]gar |^[Uu]ntuk /,'');out.push('Nilai '+v[i%v.length]+' diamalkan dengan '+fact.charAt(0).toLowerCase()+fact.slice(1)+', kerana perkara ini '+why+'.');}}
+  document.getElementById('essay8c').textContent=out.length?out.join('\n\n'):'Pilih sekurang-kurangnya satu nilai, satu isi dan satu huraian untuk menjana ayat esei.';
+ } else essay.textContent=obj.sentence(chosen);
+}
+function getAll(){let out='PDPR PENDIDIKAN MORAL SPM — GERAK GEMPUR 2026\n';out+='Nama: '+document.getElementById('nama').value+'\nKelas: '+document.getElementById('kelas').value+'\n\n';for(const k of Object.keys(data)){let e=document.getElementById('essay'+k);if(e)out+=k.toUpperCase()+':\n'+e.textContent+'\n\n'}return out}
+function downloadAnswers(){if(!document.getElementById('nama').value.trim()||!document.getElementById('kelas').value.trim()){alert('Sila isi nama dan kelas dahulu.');return}const blob=new Blob([getAll()],{type:'text/plain;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Jawapan_PDPR_Moral_'+document.getElementById('nama').value.trim().replace(/\s+/g,'_')+'.txt';a.click();URL.revokeObjectURL(a.href);document.getElementById('status').textContent='Fail jawapan dimuat turun. Hantar fail ini kepada guru melalui saluran kelas.'}
+async function copyAll(){try{await navigator.clipboard.writeText(getAll());document.getElementById('status').textContent='Semua jawapan telah disalin. Tampal ke saluran penghantaran guru.'}catch(e){document.getElementById('status').textContent='Fungsi salin tidak tersedia pada pelayar ini. Gunakan butang muat turun.'}}
+
+const modelAnswers={
+'8a':{min:3,keys:['8a'],text:'Antara kebaikan menyimpan dalam SSPN ialah menjamin kos pendidikan tinggi, mendidik budaya menabung dan mengurangkan beban hutang. Jawapan lain yang diterima dalam skema ialah pelepasan cukai pendapatan dan layak memohon pinjaman PTPTN.'},
+'8b':{min:3,keys:['8b'],text:'Antara sumber kewangan lain yang diperoleh secara beretika ialah insurans, pelaburan hartanah, dividen, saham yang diiktiraf, gaji, bonus, upah dan sewa. Bagi soalan 3 markah, nyatakan tiga sumber yang tepat.'},
+'8c':{min:1,keys:['8cV','8cF','8cH'],text:'Kita hendaklah mengamalkan nilai bertanggungjawab dengan membuat simpanan atau tabungan supaya wang tersedia ketika kecemasan atau untuk pendidikan. Kita juga boleh mengamalkan nilai rasional dengan membuat pinjaman mengikut kemampuan supaya beban hutang tidak berlebihan. Nilai kesederhanaan pula diamalkan dengan berbelanja secara berhemat agar tidak berlaku pembaziran dan keperluan utama didahulukan. Contoh ini menggunakan fakta dan huraian yang terdapat dalam pilihan skema; jawapan esei perlu mengikut set fakta-huraian yang diterima.'},
+'8d':{min:3,keys:['8d'],text:'Antara punca belia muflis ialah pengurusan kewangan yang lemah, berbelanja melebihi pendapatan, gagal membayar pelbagai pinjaman dan kurang pengetahuan tentang pengurusan perbelanjaan beretika. Huraian boleh dikembangkan dengan isi skema seperti kurang disiplin membeli-belah, terpengaruh dengan jualan dalam talian, pembelian impulsif, penggunaan kad kredit dan pembelian barangan mewah di luar kemampuan.'},
+'9a':{min:3,keys:['9a'],text:'Jenis buli termasuk buli fizikal, buli siber, buli lisan dan buli sosial atau emosi.'},
+'9b':{min:3,keys:['9b'],text:'Antara punca buli ialah institusi keluarga yang lemah, pengaruh rakan sebaya yang negatif, media massa yang agresif, kurang pendidikan agama dan penguatkuasaan peraturan sekolah yang lemah. Huraian boleh merujuk kepada kurang perhatian, pemantauan dan bimbingan ibu bapa serta peniruan tingkah laku agresif di rumah.'},
+'9c':{min:3,keys:['9c'],text:'Buli boleh memberikan kesan kepada mental dan emosi seperti kemurungan, kebimbangan, keyakinan diri yang rendah dan pengasingan diri. Buli juga boleh menjejaskan prestasi akademik kerana mangsa takut ke sekolah atau sukar menumpukan perhatian, serta menyebabkan kecederaan fizikal.'},
+'9d':{min:3,keys:['9d'],text:'Pihak sekolah boleh melaksanakan ceramah atau kempen antibuli, menguatkuasakan peraturan dan tindakan disiplin, menyediakan khidmat kaunseling serta bekerjasama dengan ibu bapa. Strategi boleh dihuraikan melalui pemantauan kawasan berisiko, saluran aduan sulit dan penglibatan Pegawai Perhubungan Sekolah bagi kes serius atau unsur jenayah. Jawapan perlu disokong dengan nilai universal yang diterima dalam skema seperti rasional, hormat, kerjasama dan bertanggungjawab.'}
+};
+const maxMarks={'8a':3,'8b':3,'8c':8,'8d':6,'9a':4,'9b':5,'9c':5,'9d':6};
+function checkAnswer(q){
+ const cfg=modelAnswers[q];
+ const keys=cfg.keys;
+ const picked=[]; keys.forEach(k=>selected[k].forEach(i=>picked.push({key:k,index:i,label:data[k].pool[i][0]})));
+ const correct=picked.filter(x=>x.index<correctCounts[x.key]);
+ const wrong=picked.filter(x=>x.index>=correctCounts[x.key]);
+ let enough=picked.length>=cfg.min;
+ let raw=correct.length;
+ if(q==='8c'){
+   const vals=selected['8cV'].filter(i=>i<correctCounts['8cV']).length;
+   const facts=selected['8cF'].filter(i=>i<correctCounts['8cF']).length;
+   const explanations=selected['8cH'].filter(i=>i<correctCounts['8cH']).length;
+   const paired=Math.min(facts,explanations);
+   raw=Math.min(8, paired*2 + Math.min(vals, paired));
+   enough=vals>=1&&facts>=1&&explanations>=1;
+ }
+ const mark=Math.max(0,Math.min(maxMarks[q],raw));
+ // Tandakan pilihan yang telah dipilih: hijau + tanda betul, merah + pangkah.
+ keys.forEach(k=>{
+   document.querySelectorAll('.chip[data-key=\"'+k+'\"]').forEach(chip=>{
+     chip.classList.remove('answer-correct','answer-wrong');
+     const old=chip.querySelector('.result-icon'); if(old) old.remove();
+   });
+   selected[k].forEach(i=>{
+     const isCorrect=i<correctCounts[k];
+     document.querySelectorAll('.chip[data-key=\"'+k+'\"][data-index=\"'+i+'\"]').forEach(chip=>{
+       chip.classList.add(isCorrect?'answer-correct':'answer-wrong');
+       const markEl=document.createElement('span'); markEl.className='result-icon'; markEl.setAttribute('aria-label',isCorrect?'Jawapan betul':'Jawapan salah'); markEl.textContent=isCorrect?'✓':'✕'; chip.appendChild(markEl);
+     });
+   });
+ });
+ const feedback=document.getElementById('feedback'+q);
+ let status='MARKAH LATIHAN: '+mark+' / '+maxMarks[q]+'\n';
+ status+='PETUNJUK: ✓ hijau = isi skema yang betul; ✕ merah = pilihan pengganggu/salah.\n';
+ if(wrong.length){status+='Ada '+wrong.length+' pilihan pengganggu dipilih. Pilihan tersebut tidak mendapat markah.\n';}
+ if(!enough){status+='Jawapan belum lengkap. Tambah isi yang betul dan/atau huraian yang diperlukan.\n';}
+ if(mark===maxMarks[q]&&!wrong.length){status+='Semua markah latihan bagi isi yang dipilih telah dicapai.\n';}
+ else if(mark<maxMarks[q]){status+='Semak isi yang belum dipilih dan bandingkan dengan senarai jawapan betul di bawah.\n';}
+ const correctList=keys.flatMap(k=>data[k].pool.slice(0,correctCounts[k]).map(x=>'• '+x[0]));
+ feedback.textContent=status+'\nJAWAPAN BETUL YANG DITERIMA DALAM LATIHAN:\n'+correctList.join('\n')+'\n\nCONTOH JAWAPAN LENGKAP:\n'+cfg.text+'\n\nPANDUAN MARKAH: setiap isi tepat yang dipilih dikira sebagai satu markah latihan, tertakluk pada had markah subsoalan. Bagi 8(c), markah latihan mengira pasangan fakta-huraian serta nilai yang dipilih. Ini anggaran automatik, bukan pemarkahan rasmi pemeriksa; markah sebenar bergantung pada kehendak skema dan kualiti huraian.';
+}
+
+init();
+</script></body></html>
